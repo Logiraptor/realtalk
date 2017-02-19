@@ -1,0 +1,13 @@
+
+
+open Object
+    def nil?
+        false
+    end
+end
+
+open NilObject
+    def nil?
+        true
+    end
+end

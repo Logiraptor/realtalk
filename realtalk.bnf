@@ -1,0 +1,7 @@
+
+id : 'a'-'z';
+
+<< import "github.com/Logiraptor/realtalk/ast" >>
+
+
+Prog : id << ast.NewID($1), nil >>;

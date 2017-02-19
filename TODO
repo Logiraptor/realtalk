@@ -1,0 +1,30 @@
+
+- Primitives
+    - Nil
+        - nil?
+    - Integer
+        - int?
+        - arithmetic
+    - Bool
+        - bool?
+        - boolean arithmetic
+        - if then else
+    - String
+        - str?
+        - len
+        - concat(str) -> String
+        - indexOf(str) -> Integer
+        - subString(start, end) -> String
+    - Float
+        - float?
+        - arithmetic
+    - Array
+        - len
+        - elemAt(i) -> Object
+
+- Custom objects
+    - get / set internal data
+    - derived data
+
+- Reflection
+    - .class

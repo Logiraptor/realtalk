@@ -1,0 +1,16 @@
+Item sets:
+S0{
+	id : •  'a'-'z'
+}
+Transitions:
+	['a','z'] -> S1
+Action: nil
+Symbols classes: {['a','z']}
+
+S1{
+	id :  'a'-'z' •
+}
+Transitions:
+Action: Accept("id")
+Symbols classes: {}
+

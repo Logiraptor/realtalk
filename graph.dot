@@ -1,0 +1,30 @@
+digraph {
+	Integer -> Class [ label="is_a" color="blue" ];
+	Class -> Class [ label="is_a" color="blue" ];
+	Class -> Module [ label="extends" color="red" ];
+	Module -> Class [ label="is_a" color="blue" ];
+	Module -> Object [ label="extends" color="red" ];
+	Object -> Class [ label="is_a" color="blue" ];
+	Object -> BasicObject [ label="extends" color="red" ];
+	BasicObject -> Class [ label="is_a" color="blue" ];
+	BasicObject -> nil [ label="extends" color="red" ];
+	NilClass -> Class [ label="is_a" color="blue" ];
+	NilClass -> Object [ label="extends" color="red" ];
+	Integer -> Numeric [ label="extends" color="red" ];
+	Numeric -> Class [ label="is_a" color="blue" ];
+	Numeric -> Object [ label="extends" color="red" ];
+	TrueClass -> Class [ label="is_a" color="blue" ];
+	TrueClass -> Object [ label="extends" color="red" ];
+	FalseClass -> Class [ label="is_a" color="blue" ];
+	FalseClass -> Object [ label="extends" color="red" ];
+	Array -> Class [ label="is_a" color="blue" ];
+	Array -> Object [ label="extends" color="red" ];
+	String -> Class [ label="is_a" color="blue" ];
+	String -> Object [ label="extends" color="red" ];
+	Hash -> Class [ label="is_a" color="blue" ];
+	Hash -> Object [ label="extends" color="red" ];
+	Symbol -> Class [ label="is_a" color="blue" ];
+	Symbol -> Object [ label="extends" color="red" ];
+	Set -> Class [ label="is_a" color="blue" ];
+	Set -> Object [ label="extends" color="red" ];
+}

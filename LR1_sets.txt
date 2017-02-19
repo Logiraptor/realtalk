@@ -1,0 +1,21 @@
+S0{
+	S' : •Prog «$»
+	Prog : •id «$»
+}
+Transitions:
+	Prog -> 1
+	id -> 2
+
+
+S1{
+	S' : Prog• «$»
+}
+Transitions:
+
+
+S2{
+	Prog : id• «$»
+}
+Transitions:
+
+
