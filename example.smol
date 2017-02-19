@@ -1,0 +1,29 @@
+# Comments
+
+# Literals
+
+# Numbers
+
+1 # integer
+1.0 # float
+"abc" # string
+:foobar # symbol
+[:bar, 2, "def"] # array
+
+# assignment
+age = 28 # now we have a thing called age with the value 28
+
+# Object literal. This will have a unique class.
+cow = object
+    def speak # method definition
+        "moooo" # 
+    end
+end
+
+# now we have a thing called cow which can speak.
+cow.moo() # => "moooo"
+
+# cow can do a few other things which we didn't teach it
+cow.methods() # => [:methods, :class, :send :moo]
+cow.send(:moo) # => "moooo"
+cow.class() # => <TODO>
