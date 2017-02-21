@@ -11,6 +11,18 @@ func (TestRTObj) Nil() Object {
 	return EmptyObjectVal
 }
 
+func (TestRTObj) First(a, b Object) Object {
+	return a
+}
+
+func (TestRTObj) Second(a, b Object) Object {
+	return b
+}
+
+func (TestRTObj) CountArgs(one Object, args ...Object) Object {
+	return NewSmolInt(len(args) + 1)
+}
+
 func TestNativeObject_Send(t *testing.T) {
 	type args struct {
 		name string
@@ -27,6 +39,9 @@ func TestNativeObject_Send(t *testing.T) {
 			nativeValue: TestRTObj{},
 			args: []args{
 				{name: "Nil", want: EmptyObjectVal},
+				{name: "First", args: []Object{NewSmolInt(3), NewSmolInt(5)}, want: NewSmolInt(3)},
+				{name: "Second", args: []Object{NewSmolInt(3), NewSmolInt(5)}, want: NewSmolInt(5)},
+				{name: "CountArgs", args: []Object{NewSmolInt(3), NewSmolInt(5), NewSmolInt(7)}, want: NewSmolInt(3)},
 			},
 		},
 	}
